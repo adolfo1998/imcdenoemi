@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Índice de masa corporal</title>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Original:  Marat Rikelman (rikelman@bellsouth.net) -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+function mod(div,base) {
+return Math.round(div - (Math.floor(div/base)*base));
+}
+function c_IMC() {
+var p = document.imc.peso.value;
+var a = document.imc.altura.value;
+var r = (Math.round(p*1000000/(a * a)))/100;
+var rv = true;
+if ( (p <= 20) || (p >= 250)  || (a <= 120) || (a >= 250) ) {
+alert ("Datos incorrectos. Inténtelo de nuevo.");
+rv = false;
+}
+if (rv) {
+document.imc.resul.value = r;
+}
+if (r <=19) 
+document.imc.comentario.value = "Falta de peso";
+if (r >19 && r <=25) 
+document.imc.comentario.value = "Peso adecuado";
+if (r >25 && r <=30) 
+document.imc.comentario.value = "Sobrepeso. Se recomiendo que haga una dieta.";
+if (r >30 && r <=40) 
+document.imc.comentario.value = "Obesidad. Riesgo para la salud.";
+if (r >40) 
+document.imc.comentario.value = "Obesidad severa";
+
+return rv;
+}
+//  End -->
+
+</script>
+</head>
+
+<body bgcolor="#CCFFFF" vlink="#0000FF">
+<p align="center"><b><font size="6">Índice de masa corporal</font></b></p>
+<p align="center"><b><font size="6"><img src="imc.jpg" width="173" height="87"></font></b></p>
+<form name=imc>
+<center>
+  <table width=458 border=0 cellpadding="5" cellspacing="3">
+    <tr>
+<td align=center width="250"><b>Peso (kg):</b>
+<input type=text name=peso SIZE=5 maxlength=3> </td>
+<td align=center width="200"><b>Altura (cm):</b>
+<input type=text name=altura size=5 maxlength=3></td>
+</tr>
+<tr>
+<td align=center width="50%" colspan="2">
+&nbsp;
+<p>
+<input type=button value="Calcular IMC" onclick="c_IMC()">
+ 
+</p>
+ 
+<hr></td>
+</tr>
+<tr>
+<td width="450" colspan="2">
+  <p align="center">&nbsp;
+  </p>
+  <p align="center"><b>Índice de masa corporal:</b> <input type=text name=resul size=15>
+  </p>
+</td>
+</tr>
+<tr>
+<td width="450" colspan="2">
+<p align="center">&nbsp;
+</p>
+<p align="center">que se interpreta como<br>
+<input type=text name=comentario size=42>
+</p>
+</td>
+</tr>
+</table>
+</center>
+</form>
+
+<p align="center">&nbsp;</p>
+<p align="center"><font size="2" face="Book Antiqua">Tener una vida Saludable es Vivir Feliz </font></p>
+<p align="center">&nbsp;
+</p>
+<p align="center">&nbsp;
+</p>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="4" cellspacing="6">
+    <tr>
+      <td>
+        <p align="center"><a href="recomendacion.htm"><img border="0" src="changuito.png" width="100" height="80"><br>
+        >> un Enlace a unas Recomendaciones para llevar una vida saludable</a></td>
+    </tr>
+  </table>
+  </center>
+</div>
+</body>
+</html>
